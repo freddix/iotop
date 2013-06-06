@@ -1,11 +1,11 @@
 Summary:	Top like utility for I/O
 Name:		iotop
-Version:	0.5
+Version:	0.6
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://guichaz.free.fr/iotop/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	b0846ad976f41bca2813f7f8a73fef31
+# Source0-md5:	5ef9456b26d7694abf3101a72e1e0d1d
 URL:		http://guichaz.free.fr/iotop/
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS THANKS
-%attr(755,root,root) %{_bindir}/iotop
+%attr(755,root,root) %{_sbindir}/iotop
 %{py_sitescriptdir}/iotop
 %{py_sitescriptdir}/*.egg-info
 %{_mandir}/man8/iotop.8*
